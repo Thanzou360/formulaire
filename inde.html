@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url(./image/rasengen\ 3D.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .navbar {
+            background-color: rgba(127, 173, 194, 0.863);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            opacity: 0.5;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .logout-button {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+        .logout-button:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Bienvenue sur votre Tableau de Bord</h1>
+        <button class="logout-button" onclick="window.location.href='/logout'">Déconnexion</button>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>Statistiques Utilisateur</h2>
+            <p>Voici un aperçu de vos activités récentes.</p>
+        </div>
+        <div class="card">
+            <h2>Notifications</h2>
+            <p>Vous avez 3 nouvelles notifications.</p>
+        </div>
+        <div class="card">
+            <h2>Paramètres du Compte</h2>
+            <p>Gérez vos informations personnelles et préférences.</p>
+        </div>
+    </div>
+</body>
+</html>
